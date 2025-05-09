@@ -135,3 +135,34 @@ body {
   grid-column-start: 7;
   grid-row-start: 1;
 }
+
+@media screen and (max-width: 992px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 0 8px;
+    margin: 2rem auto;
+    gap: var(--gap-size);
+  }
+  .card-header .card-quotation {
+
+    display: none;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5 {
+    grid-column: unset;
+    grid-row: unset;
+    position: static;
+  }
+}
